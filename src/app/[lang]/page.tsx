@@ -25,7 +25,7 @@ export default async function Page({
     <main className="min-h-dvh flex flex-col gap-14 relative">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
+          <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between items-center">
             <div className="gap-2 flex flex-col order-2 md:order-1">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
@@ -42,7 +42,7 @@ export default async function Page({
             
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
-                <AvatarImage alt={data.name} src={data.avatarUrl} />
+                <AvatarImage alt={data.name} src={data.avatarUrl} className="object-cover" />
                 <AvatarFallback>{data.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
