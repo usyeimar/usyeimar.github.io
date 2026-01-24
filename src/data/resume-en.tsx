@@ -9,7 +9,7 @@ export const DATA_EN = {
   summary:
     "Information Systems Analysis and Development Technician with over 4 years of experience in the software development lifecycle (design, installation, testing, and maintenance). Specialist in designing and implementing robust Full Stack architectures and scalable, efficient environments. I am a proactive, adaptable, and result-oriented professional with high capacity for self-managing independent projects and effective collaboration in productive teams. My constant focus on innovation and learning allows me to face complex challenges and apply cutting-edge technologies.",
   greeting: "Hi, I'm",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.jpg",
   skills: [
     { name: "PHP (Laravel, Symfony)", icon: "globe" },
     { name: "Node.js (NestJS)", icon: "Nodejs" },

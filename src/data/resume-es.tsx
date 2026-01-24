@@ -9,7 +9,7 @@ export const DATA_ES = {
   summary:
     "Técnico en Análisis y Desarrollo de Sistemas de Información, con más de 4 años de experiencia en el ciclo de vida de desarrollo de software (diseño, instalación, pruebas y mantenimiento). Especialista en el diseño e implementación de arquitecturas Full Stack robustas y entornos escalables y eficientes. Me caracterizo por ser un profesional proactivo, adaptable y orientado a resultados, con una alta capacidad para la autogestión de proyectos independientes y la colaboración eficaz en equipos productivos. Mi enfoque constante en la innovación y el aprendizaje me permite enfrentar desafíos complejos y aplicar tecnologías de vanguardia.",
   greeting: "Hola, soy",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.jpg",
   skills: [
     { name: "PHP (Laravel, Symfony)", icon: "globe" },
     { name: "Node.js (NestJS)", icon: "Nodejs" },
