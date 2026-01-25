@@ -18,9 +18,16 @@ function getSortedPosts() {
 }
 
 export async function generateStaticParams() {
-  return allPosts.map((post) => ({
-    slug: post._meta.path.replace(/\.mdx$/, ""),
-  }));
+  const params = [];
+  for (const lang of ["en", "es"]) {
+    for (const post of allPosts) {
+      params.push({
+        lang,
+        slug: post._meta.path.replace(/\.mdx$/, ""),
+      });
+    }
+  }
+  return params;
 }
 
 export async function generateMetadata({
