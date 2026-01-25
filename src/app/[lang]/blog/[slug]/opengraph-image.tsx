@@ -5,7 +5,25 @@ import { allPosts } from "content-collections";
 import { DATA } from "@/data/resume";
 
 // export const runtime = "edge";
+// export const runtime = "edge";
 export const dynamic = "force-static";
+
+export async function generateStaticParams() {
+  const posts = allPosts;
+  const languages = ["en", "es"];
+  
+  const params = [];
+  for (const lang of languages) {
+    for (const post of posts) {
+      params.push({
+        lang,
+        slug: post._meta.path.replace(/\.mdx$/, ""),
+      });
+    }
+  }
+  
+  return params;
+}
 
 export const alt = "Blog Post";
 export const size = {

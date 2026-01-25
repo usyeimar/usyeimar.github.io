@@ -5,6 +5,13 @@ import { DATA } from "@/data/resume";
 // export const runtime = "edge";
 export const dynamic = "force-static";
 
+export async function generateStaticParams() {
+  return [
+    { lang: "en" },
+    { lang: "es" },
+  ];
+}
+
 export const alt = "Blog";
 export const size = {
     width: 1200,
