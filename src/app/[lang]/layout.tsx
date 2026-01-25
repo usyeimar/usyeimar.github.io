@@ -5,6 +5,14 @@ import { getDictionary } from "@/data/resume";
 import type { Metadata } from "next";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 
+
+export async function generateStaticParams() {
+  return [
+    { lang: "en" },
+    { lang: "es" },
+  ];
+}
+
 export async function generateMetadata({
   params,
 }: {
