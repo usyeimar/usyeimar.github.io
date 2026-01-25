@@ -1,4 +1,4 @@
-import { GlobeIcon, MailIcon, HomeIcon, NotebookIcon, Mic, Workflow, Bot } from "lucide-react";
+import { GlobeIcon, MailIcon, HomeIcon, NotebookIcon, Mic, Workflow, Bot, CalendarIcon } from "lucide-react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
@@ -16,6 +16,7 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 export const Icons = {
   globe: (props: IconProps) => <GlobeIcon {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
+  calendar: (props: IconProps) => <CalendarIcon {...props} />,
   linkedin: (props: IconProps) => (
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
       <title>LinkedIn</title>

@@ -78,6 +78,12 @@ export const DATA_ES = {
         icon: "email",
         navbar: false,
       },
+      Booking: {
+        name: "Agendar Cita",
+        url: "/es/booking",
+        icon: "calendar",
+        navbar: true,
+      },
     },
     bookingUrl: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1jd1sE6luyMDPJgQOG16Z4ISOPmTPx1hcYTpqB02VRifKCDRveHtnpsVyMU6sJZV0g4vaY11Y5?gv=true",
   },

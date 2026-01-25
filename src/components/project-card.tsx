@@ -94,10 +94,10 @@ export function ProjectCard({
                     <Image
                       src={displayImage}
                       alt={title}
-                      width={500}
-                      height={300}
-                      className="w-full h-48 object-cover"
-                      unoptimized
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 hover:scale-105"
+                      quality={95}
                     />
                     
                     {gallery && gallery.length > 1 && (
